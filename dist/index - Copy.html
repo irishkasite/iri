@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>vktrchrn</title>
+	<meta name="description" content="vktrchrn">
+
+	<meta property="og:url" content="https://vktrchrn.pp.ua/">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="vktrchrn">
+	<meta property="og:description" content="watching you...">
+	<meta property="og:image" content="https://cdn.discordapp.com/attachments/1075513563881418762/1077549719997382656/photo_2023-01-30_09-50-44.jpg">
+
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="twitter:domain" content="logout.tk">
+	<meta property="twitter:url" content="https://vktrchrn.pp.ua/">
+	<meta name="twitter:title" content="Greengray">
+	<meta name="twitter:description" content="watching you...">
+	<meta name="twitter:image" content="https://cdn.discordapp.com/attachments/1075513563881418762/1077549719997382656/photo_2023-01-30_09-50-44.jpg">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="icon" type="image/x-icon" href="https://cdn.discordapp.com/attachments/1075513563881418762/1077552951649906749/Screenshot_40-removebg-preview.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <style>
+        .content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            font-family: 'VT323', monospace;
+        }
+
+        p {
+            margin: 0;
+            cursor: default;
+        }
+
+        body {
+            background-color: #3b3b3b;
+            margin: 0;
+        }
+
+        .btn {
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 35px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            margin-top: 50px;
+            width: 170px;
+            border: 3px solid rgb(124, 124, 124);
+        }
+
+        a {
+            opacity: 0.6;
+            transition: 0.3s;
+        }
+
+        a:hover {
+            opacity: 1;
+            background-color: rgb(58, 58, 58);
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        @keyframes loadanim {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 100%;
+            }
+        }
+
+        .loaded {
+            animation: 1s ease-out 0s 1 loadanim;
+        }
+
+        #myVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+        }
+
+        video {
+            filter: brightness(30%);
+        }
+
+        #myBtn {
+            width: 200px;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        #myBtn:hover {
+            background: #ddd;
+            color: black;
+        }
+
+        .ti-control-pause {
+            color: white;
+            font-size: 25px;
+        }
+
+        .ti-control-play {
+            color: white;
+            font-size: 25px;
+        }
+
+        .ti-control-pause:hover {
+            cursor: pointer;
+        }
+
+        .ti-control-play:hover {
+            cursor: pointer;
+        }
+        
+        .lowerleft
+        {
+            margin-bottom: 30px;
+            margin-left : 30px;
+            position: fixed;
+            bottom: 0;
+            z-index: 9999;
+        }
+    </style>
+
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+</head>
+<body  style="opacity: 0;">
+    
+    <span class="ti-control-pause lowerleft" id="pause-button"></span>
+
+    <div>
+        <video autoPlay muted loop id="myVideo">
+            <source src="https://cdn.discordapp.com/attachments/1075513563881418762/1077557086151507968/video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="content" id="cont">
+        <p style="font-size: 140px; color: white;">vktrchrn</p>
+        <a href="https://steamcommunity.com/profiles/76561199172861566" class="btn">STEAM</a>
+        <a href="https://discordapp.com/users/559762628357128193" class="btn">DISCORD</a>
+        <a href="https://www.twitch.tv/vktrchrn" class="btn">TWITCH</a>
+        <a href="https://github.com/vktrchrn" class="btn">GITHUB</a><br>
+        <a href="https://open.spotify.com/user/roq5kjc5c8hg32b4r0hggf7oi" class="btn">SPOTIFY</a>
+        <a href="https://twitter.com/vktrchrn" class="btn">TWITTER</a>
+        <a href="https://www.instagram.com/vvktrchrn" class="btn">INSTAGRAM</a>
+        <a href="https://vk.com/id669684462" class="btn">VK</a>
+    </div>
+
+    
+
+    <script>
+        
+        window.onload = function() {
+            setTimeout(() => {
+                document.body.className += " loaded";
+                document.body.style = "";    
+            }, 300);
+        }
+
+
+
+        var video = document.getElementById("myVideo");
+        var btn = document.getElementById("myBtn");
+        var pauseBtn = document.getElementById("pause-button");
+        var pause = false;
+
+        pauseBtn.addEventListener('click', function() {
+            pause = !pause;
+
+            if(pause) {
+                pauseBtn.className = "ti-control-play lowerleft";
+                video.pause();
+            } else {
+                pauseBtn.className = "ti-control-pause lowerleft";
+                video.play();
+            }
+        });
+
+       
+
+        document.body.addEventListener('click', function() { video.muted = false; video.volume = 0.1; }, { once: true });
+    </script>
+</body>
+</html>
